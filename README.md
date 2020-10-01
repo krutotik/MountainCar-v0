@@ -50,6 +50,8 @@ this is how formula for updating q-table looks like:
 
 ![formula](https://github.com/krutotik/MountainCar-v0/blob/master/Pictures/678cb558a9d59c33ef4810c9618baf34a9577686.svg "name_2")
 
+More on Q-learning algorithm: https://towardsdatascience.com/a-beginners-guide-to-q-learning-c3e2a30a653c
+
 The main problem with this particular environment is that it has a continuous state space (Car Position from -1.2 to 0.6 and Car Velocity from -0.07 to 0.07). One approach to deal with it is to use Deep Reinforcement Learning algorithms, but an alternative approach is to simply discretize the state space and train an agent using Q-learning algorithm, as previously planned before. Here, the discretization was performed using 0.1 step for first element (Position) from state vector and 0.01 step for the second element (Velocity), but those values can be changed if needed. 
 
 Another important thing for this environment is that the only way to impove final reward for an agent is to find a way to climb the hill. This can be problematic if the algorithm used for training has limited state exploration alibility. 
